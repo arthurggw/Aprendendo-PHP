@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas simples</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de moedas simples
+        </h1>
+        <h3>quanto você tem na carteira hoje?</h3>
+    </header>
+    <section>
+        <div id="data">        
+            <form action="resultado.php" method="get">
+                <label for="número">Valor: </label>
+                <input type="number" name="numero" id="idnumero">
+                
+                <p>Moeda de origem:</p>
+                <select name="base">
+                    <option value="">Reais</option>    
+                    <option value="Euro">Euros</option>
+                    <option value="Dolar">Dolares</option>
+                    <option value="Iene">Ienes</option>            
+                </select>
+                
+                <p>e para qual moeda precisa saber</p>
+                <select name="converter">
+                    <option value="">Reais</option>
+                    <option value="Euro">Euros</option>
+                    <option value="Dolar">Dolares</option>
+                    <option value="Iene">Ienes</option>            
+                </select>
+                
+                <br><br>
+                <input type="submit" value="Converter">
+            </form>
+            <!--<input type="submit" value="enviar">   Não sei como corrigir a formatação,o enviar deveria ficar embaixo em uma escala maior e a moeda na mesma linhax
+        </form>
+        <form action="resultado.php" method="get">                              Demorei para perceber que precisava fazer um form isolado para a seleção
+            <select name="base">
+                <option value="">Reais</option>    
+                <option value="euros">Euros</option>
+                <option value="Dolar">Dolares</option>
+                <option value="Iene"> Ienes</option>            
+            </select>
+            <p>e para qual moeda precisa saber</p>
+             <select name="converter">
+                <option value="">Reais</option>
+                <option value="euro">Euros</option>
+                <option value="Dolar">Dolares</option>
+                <option value="Iene"> Ienes</option>            
+            </select>
+            <input type="submit" value="enviar">                 <!-- Como diabos eu faço para um unico botão enviar os 2 formularios-->
+        </form>
+        </div>
+   </section>
+     
+</body>
+</html>
